@@ -38,7 +38,7 @@ const Table = ({ data, searchTerm }) => {
   useEffect(() => {
     let start = (page - 1) * itemsPerPage;
     let end = page * itemsPerPage;
-    console.log(start, end);
+
     const mockData = [...sortedData];
 
     const res = mockData.slice(start, end);
